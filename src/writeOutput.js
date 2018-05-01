@@ -1,3 +1,3 @@
-export default input => {
+module.exports = input => {
   console.log(input);
 };

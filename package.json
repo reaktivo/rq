@@ -4,10 +4,10 @@
   "description": "rq is a jq inspired command-line swiss-army tool.",
   "main": "index.js",
   "bin": {
-    "rq": "node -r esm src/index.js"
+    "rq": "node ."
   },
   "scripts": {
-    "test": "node -r esm node_modules/.bin/tap src/**/*.test.js"
+    "test": "tap src/**/*.test.js"
   },
   "author": "m@reaktivo.com",
   "license": "MIT",
@@ -19,7 +19,6 @@
     "safer-eval": "^1.2.3"
   },
   "devDependencies": {
-    "jest": "^22.4.3",
     "tap": "^11.1.4"
   }
 }

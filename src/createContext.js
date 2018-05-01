@@ -1,7 +1,7 @@
-import fetch from "node-fetch";
+const fetch = require("node-fetch");
 
 // We explicitly want to mutate
 // the passed object
-export default obj => ({
+module.exports = obj => ({
   fetch
 });

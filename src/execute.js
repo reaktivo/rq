@@ -1,5 +1,4 @@
-import saferEval from "safer-eval";
+const saferEval = require("safer-eval");
+const createContext = require("./createContext");
 
-import createContext from "./createContext";
-
-export default async str => saferEval(str, createContext());
+module.exports = async str => saferEval(str, createContext());

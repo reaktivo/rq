@@ -14,5 +14,5 @@
  * For example, compose(f, g, h) is identical to doing
  * (...args) => h(await g(await f(...args))).
  */
-export default (...fns) =>
+module.exports = (...fns) =>
   fns.reduce((a, b) => async (...args) => b(await a(...args)));

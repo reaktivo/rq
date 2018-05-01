@@ -1,4 +1,4 @@
-// import { transform } from "babel-core";
+// const { transform } = require("babel-core");
 
 // see https://babeljs.io/docs/usage/api/
 const options = {
@@ -7,4 +7,4 @@ const options = {
   presets: ["env"]
 };
 
-export default src => transform(src);
+module.exports = src => transform(src);

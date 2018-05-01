@@ -1,7 +1,5 @@
-import t from "tap";
-import asyncFlow from "./asyncFlow";
-
-const { test, equal } = t;
+const { test, equal } = require("tap");
+const asyncFlow = require("./asyncFlow");
 
 test("composition from left to right", async () => {
   const a = x => x * x;
