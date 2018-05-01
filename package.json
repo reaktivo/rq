@@ -7,7 +7,7 @@
     "rq": "index.js"
   },
   "scripts": {
-    "test": "tap src/**/*.test.js",
+    "test": "tap --jobs src/**/*.test.js",
     "test:coverage": "npm -s test -- --coverage-report=html"
   },
   "author": "m@reaktivo.com",
