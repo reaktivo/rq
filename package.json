@@ -14,7 +14,6 @@
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.6.1",
-    "esm": "^3.0.28",
     "node-fetch": "^2.1.2",
     "safer-eval": "^1.2.3"
   },
