@@ -1,5 +1,5 @@
 {
-  "name": "rq-cli",
+  "name": "@reaktivo/rq",
   "version": "0.1.0",
   "description": "rq is a jq inspired command-line swiss-army tool.",
   "main": "index.js",
