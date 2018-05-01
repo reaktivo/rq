@@ -4,5 +4,10 @@ const transform = require("./transform");
 const writeOutput = require("./writeOutput");
 const asyncFlow = require("./asyncFlow");
 
-module.exports = (input = readInput()) =>
+const inject = {
+  execute,
+  writeOutput
+};
+
+module.exports = (input = readInput(), { execute, writeOutput } = inject) =>
   asyncFlow(execute, writeOutput)(input);
