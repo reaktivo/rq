@@ -1,5 +1,7 @@
 # [rq-cli](https://github.com/reaktivo/rq-cli/) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/reaktivo/rq-cli/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/rq-cli.svg?style=flat)](https://www.npmjs.com/package/rq-cli) [![Coverage Status](https://img.shields.io/coveralls/reaktivo/rq-cli/master.svg?style=flat)](https://coveralls.io/github/reaktivo/rq-cli?branch=master) [![CircleCI Status](https://circleci.com/gh/reaktivo/rq-cli.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/reaktivo/rq-cli) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/reaktivo/rq-cli/compare)
 
+rq is a jq inspired command-line swiss-army tool.
+
 ## Installation
 
 ```sh
