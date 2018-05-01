@@ -33,7 +33,7 @@ javascript with the following globals exposed:
 
 ## Development
 
-Testing is done via the [tape](https://github.com/substack/tape) and
+Testing is done via the [tap](https://github.com/tapjs/node-tap) and
 is intended to be simple and straight to the point.
 
 ```sh
