@@ -7,7 +7,7 @@
     "rq": "node -r esm src/index.js"
   },
   "scripts": {
-    "test": "tap --node-arg=--require --node-arg=esm src/**/*.test.js"
+    "test": "node -r esm node_modules/.bin/tap src/**/*.test.js"
   },
   "author": "m@reaktivo.com",
   "license": "MIT",
