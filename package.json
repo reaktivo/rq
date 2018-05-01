@@ -1,0 +1,25 @@
+{
+  "name": "rq-cli",
+  "version": "0.1.0",
+  "description": "rq is a jq inspired command-line swiss-army tool.",
+  "main": "index.js",
+  "bin": {
+    "rq": "node -r esm src/index.js"
+  },
+  "scripts": {
+    "test": "tape -r esm src/**/*.test.js"
+  },
+  "author": "m@reaktivo.com",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.6.1",
+    "esm": "^3.0.28",
+    "node-fetch": "^2.1.2",
+    "safer-eval": "^1.2.3"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "tape": "^4.9.0"
+  }
+}
