@@ -4,7 +4,7 @@
   "description": "rq is a jq inspired command-line swiss-army tool.",
   "main": "index.js",
   "bin": {
-    "rq": "node ."
+    "rq": "."
   },
   "scripts": {
     "test": "tap src/**/*.test.js",
