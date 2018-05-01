@@ -1,6 +1,6 @@
 {
   "name": "@reaktivo/rq",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "rq is a jq inspired command-line swiss-army tool.",
   "main": "index.js",
   "bin": {
