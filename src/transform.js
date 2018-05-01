@@ -17,7 +17,8 @@ const options = {
  * to see if a transformation is required
  *
  */
-module.exports = src => {
+
+const babel = src => {
   if (shouldTransform(src)) {
     // requiring conditionally adds a
     // small performance boost
@@ -25,4 +26,10 @@ module.exports = src => {
     return transform(src, options);
   }
   return src;
+};
+
+const wrapInArray = src => `[${src}]`;
+
+module.exports = src => {
+  return babel(wrapInArray(src));
 };
