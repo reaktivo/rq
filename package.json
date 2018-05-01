@@ -7,7 +7,8 @@
     "rq": "node ."
   },
   "scripts": {
-    "test": "tap src/**/*.test.js"
+    "test": "tap src/**/*.test.js",
+    "test:coverage": "npm -s test -- --coverage-report=html"
   },
   "author": "m@reaktivo.com",
   "license": "MIT",
