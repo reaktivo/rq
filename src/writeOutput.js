@@ -1,3 +1,1 @@
-module.exports = input => {
-  console.log(input);
-};
+module.exports = (input, log = console.log) => log(input);
