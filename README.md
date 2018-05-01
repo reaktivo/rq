@@ -14,14 +14,22 @@ npm install -g @reaktivo/rq
 
 ```sh
 rq 'fetch`https://httpbin.org/ip`.then(res => res.json()).then(res => res.origin)'
-77.173.138.54
+77.173.111.54
+
+# Since we also expose lodash/fp, the previous command is equivalent to the following
+rq 'fetchJson `https://httpbin.org/ip`, get `origin`, split `.`'
+77.173.111.54
+
+rq 'fetchJson `https://httpbin.org/ip`' 'get `origin`' 'split `.`'
 ```
 
 Out of the box, **rq** allows you to safely evaluate
 javascript with the following globals exposed:
 
-* [x] `fetch`: A browser compatible fetch implementation
-* [ ] Rxjs Operators: `map`, `filter`, `switchMap`, etc
+* [x] fetch: A browser compatible fetch implementation
+* [x] fetchJson, fetchBody: Shortcuts for the fetch function
+* [x] [lodash/fp methods](https://github.com/lodash/lodash/wiki/FP-Guide)
+* [ ] Rxjs Operators: map, filter, switchMap, etc
 
 ## Development
 
