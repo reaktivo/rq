@@ -7,7 +7,7 @@ test("run calls execute and writeToOutput", async () => {
   const writeOutput = x => `wrote ${x}`;
 
   equal(
-    await run("something", { execute, writeOutput }),
+    await run("something", [execute, writeOutput]),
     "wrote executed something"
   );
 });

@@ -1,13 +1,11 @@
-const execute = require("./execute");
 const readInput = require("./readInput");
-const transform = require("./transform");
-const writeOutput = require("./writeOutput");
 const asyncFlow = require("./asyncFlow");
 
-const inject = {
-  execute,
-  writeOutput
-};
+const createSequence = () => [
+  require("./transform"),
+  require("./execute"),
+  require("./writeOutput")
+];
 
-module.exports = (input = readInput(), { execute, writeOutput } = inject) =>
-  asyncFlow(execute, writeOutput)(input);
+module.exports = (input = readInput(), sequence = createSequence()) =>
+  asyncFlow(...sequence)(input);
