@@ -11,7 +11,7 @@ jobs:
           - v1-dependencies-{{ checksum "package-lock.json" }}
           - v1-dependencies-
       - run: npm i
-      - run: npm i -g greenkeeper-lockfile
+      - run: npm i greenkeeper-lockfile
       - run: ${npm bin}/greenkeeper-lockfile-update
       - save_cache:
           paths:
