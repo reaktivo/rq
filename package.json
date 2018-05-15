@@ -15,9 +15,12 @@
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.6.1",
+    "concat-stream": "^1.6.2",
     "lodash": "^4.17.10",
     "node-fetch": "^2.1.2",
-    "safer-eval": "^1.2.3"
+    "rxjs": "^6.1.0",
+    "safer-eval": "^1.2.3",
+    "stringify-object": "^3.2.2"
   },
   "devDependencies": {
     "tap": "^11.1.4"
